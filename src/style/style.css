@@ -130,11 +130,14 @@ button {
   padding: 10px 16px;
   outline: none;
   border-radius: 8px;
-  -webkit-transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, -webkit-box-shadow 200ms ease;
-  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, -webkit-box-shadow 200ms ease;
-  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease;
-  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease,
+  -webkit-transition: background-color 200ms ease, outline 200ms ease,
+    color 200ms ease, -webkit-box-shadow 200ms ease;
+  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease,
     -webkit-box-shadow 200ms ease;
+  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease,
+    box-shadow 200ms ease;
+  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease,
+    box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -277,10 +280,13 @@ input[type="radio"] {
   background: #fff;
   border: 1px solid #eff0f5;
   outline: none;
-  -webkit-transition: background 200ms ease, border 200ms ease, -webkit-box-shadow 200ms ease;
-  transition: background 200ms ease, border 200ms ease, -webkit-box-shadow 200ms ease;
+  -webkit-transition: background 200ms ease, border 200ms ease,
+    -webkit-box-shadow 200ms ease;
+  transition: background 200ms ease, border 200ms ease,
+    -webkit-box-shadow 200ms ease;
   transition: box-shadow 200ms ease, background 200ms ease, border 200ms ease;
-  transition: box-shadow 200ms ease, background 200ms ease, border 200ms ease, -webkit-box-shadow 200ms ease;
+  transition: box-shadow 200ms ease, background 200ms ease, border 200ms ease,
+    -webkit-box-shadow 200ms ease;
 }
 
 input[type="checkbox"] {
@@ -359,11 +365,14 @@ input {
   padding: 10px 16px;
   outline: none;
   border-radius: 8px;
-  -webkit-transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, -webkit-box-shadow 200ms ease;
-  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, -webkit-box-shadow 200ms ease;
-  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease;
-  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease,
+  -webkit-transition: background-color 200ms ease, outline 200ms ease,
+    color 200ms ease, -webkit-box-shadow 200ms ease;
+  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease,
     -webkit-box-shadow 200ms ease;
+  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease,
+    box-shadow 200ms ease;
+  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease,
+    box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -496,11 +505,14 @@ select,
   padding: 10px 16px;
   outline: none;
   border-radius: 8px;
-  -webkit-transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, -webkit-box-shadow 200ms ease;
-  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, -webkit-box-shadow 200ms ease;
-  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease;
-  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease,
+  -webkit-transition: background-color 200ms ease, outline 200ms ease,
+    color 200ms ease, -webkit-box-shadow 200ms ease;
+  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease,
     -webkit-box-shadow 200ms ease;
+  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease,
+    box-shadow 200ms ease;
+  transition: background-color 200ms ease, outline 200ms ease, color 200ms ease,
+    box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -574,11 +586,14 @@ input[type="tel"],
     padding: 10px 16px;
     outline: none;
     border-radius: 8px;
-    -webkit-transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, -webkit-box-shadow 200ms ease;
-    transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, -webkit-box-shadow 200ms ease;
-    transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease;
-    transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease,
-      -webkit-box-shadow 200ms ease;
+    -webkit-transition: background-color 200ms ease, outline 200ms ease,
+      color 200ms ease, -webkit-box-shadow 200ms ease;
+    transition: background-color 200ms ease, outline 200ms ease,
+      color 200ms ease, -webkit-box-shadow 200ms ease;
+    transition: background-color 200ms ease, outline 200ms ease,
+      color 200ms ease, box-shadow 200ms ease;
+    transition: background-color 200ms ease, outline 200ms ease,
+      color 200ms ease, box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

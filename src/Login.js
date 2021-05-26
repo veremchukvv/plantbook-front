@@ -1,20 +1,44 @@
 // import React, { Component } from "react";
 import "./style/style.css";
-import React from "react";
-import Input from "./Input";
+// eslint-disable-next-line no-unused-vars
+import React, { SyntheticEvent, useState } from "react";
 
-  function Form({ onSubmit }) {
-    //здешний onSubmit вызовет handleSubmit уровнем выше
-    return (
-      <div className="main">
-        <h2 className="tittle">Войти в Plantbook</h2>
-      <form onSubmit={onSubmit}>
-        <Input type="text" name="firstname" placeholder="Имя" />
-        <Input type="password" name="password" placeholder="Пароль" />
-        <button>Войти</button>
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  // const [redirect, setRedirect] = useState(false);
+
+  const submit = async () => {
+    console.log({
+      email,
+      password,
+    });
+  };
+
+  return (
+    <div className="main">
+      <form onSubmit={submit}>
+        <h1 className="tittle">Войти в Plantbook</h1>
+        <input
+          type="email"
+          placeholder="Email address"
+          required
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <button className="" type="submit">
+          Войти
+        </button>
       </form>
-      </div>
-    );
-  }
-export default Form;
+    </div>
+  );
+};
 
+export default Login;

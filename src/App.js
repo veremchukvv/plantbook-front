@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import "./style/style.css";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import Main from "./Main";
@@ -19,9 +20,9 @@ function App() {
           
             
                   <li className="nav-item">
-                    <a className="nav-link">
+                    <p className="nav-link">
                       <NavLink to="/login">Войти</NavLink>
-                    </a>
+                    </p>
                   </li>
                 </ol>
               </nav>
@@ -29,8 +30,8 @@ function App() {
           </div>
         </div>
         <div className="wrapper">
-          <Route exact path="/" component={Main} />
-          <Route path="/login" component={Login} />
+          <Route path="/" exact component={() => <Main/>}/>
+          <Route path="/login" component={() => <Login/>}/>
         </div>
            <footer>
             <a href="https://github.com/kaatinga/plantbook"><img className="github" src={robot} alt="this is car image" /></a>

@@ -1,5 +1,11 @@
 # spa-plantbook
+
+## Форматировать все файлы с prettier: 
+```jsx
+npx prettier --write .
+```
 ## Создаём новое React-приложение для Plantbook
+
 - Масштабирование до большого количества файлов и компонентов;
 - Использование сторонних библиотек из npm;
 - Раннее обнаружение распространённых ошибок;
@@ -7,17 +13,23 @@
 - Оптимизация кода для продакшена.
 
 ### Начинаем данный проект, используя Create React App
+
 ```jsx
 npx create-react-app plantbook
 ```
+
 ### Все остальные манипуляции будут в plantbook
+
 ```jsx
 cd plantbook
 ```
+
 ### Данный шаблон является стартовым, поэтому добавляем в него все необходтмые изменения:
+
 - в папку src добавляем папку components, в ней будут находиться все компоненты нашего одностроничного приложения
 - в папку src добавляем папку styles, в ней будут находиться стили нашего приложения
 - в корне создали файл Dockerfile
+
 ```dockerfile
 # Multi-stage
 # 1) Node image for building frontend assets
@@ -45,7 +57,9 @@ COPY --from=builder /app/build .
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 ```
-### Запустить 
+
+### Запустить
+
 ```js
 docker build -t plant .
 docker run --rm -it -p 8080:80 plant
